@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Toasts.Forms.Plugin</id>
-    <version>3.3.2</version>
+    <version>3.3.3</version>
     <title>Toast Notification Plugin for Xamarin and Windows</title>
     <authors>Egor Bogatov</authors>
     <owners>Egor Bogatov</owners>
@@ -26,13 +26,11 @@
         - Bug fix: ConcurrentDictionaries to avoid multi-threading issues
    </releaseNotes>
     <dependencies>      
-      <group targetFramework=".NETStandard1.1">
+      <group targetFramework=".netstandard2.1">
       </group>
       <group targetFramework="MonoAndroid10">
-        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="[23.3.0]" />
       </group>
       <group targetFramework="MonoAndroid70">
-        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="23.3.0" />
       </group>
       <group targetFramework="Xamarin.iOS10">
       </group>
@@ -42,14 +40,8 @@
   </metadata>
   <files>
     <!--Core-->
-    <file src="..\Toasts.Forms.Plugin.Abstractions\bin\Release\netstandard1.1\Toasts.Forms.Plugin.Abstractions.dll" target="lib\netstandard1.1" />
-    <file src="..\Toasts.Forms.Plugin.Abstractions\bin\Release\netstandard1.1\Toasts.Forms.Plugin.Abstractions.pdb" target="lib\netstandard1.1" />
-    
-    <!--UWP-->
-    <file src="..\Toasts.Forms.Plugin.UWP\bin\Release\Toasts.Forms.Plugin.UWP.dll" target="lib\uap10.0" />
-    <file src="..\Toasts.Forms.Plugin.UWP\bin\Release\Toasts.Forms.Plugin.UWP.pdb" target="lib\uap10.0" />
-    <file src="..\Toasts.Forms.Plugin.UWP\bin\Release\Toasts.Forms.Plugin.Abstractions.dll" target="lib\uap10.0" />
-    <file src="..\Toasts.Forms.Plugin.UWP\bin\Release\Toasts.Forms.Plugin.Abstractions.pdb" target="lib\uap10.0" />
+    <file src="..\Toasts.Forms.Plugin.Abstractions\bin\Release\netstandard2.1\Toasts.Forms.Plugin.Abstractions.dll" target="lib\netstandard2.1" />
+    <file src="..\Toasts.Forms.Plugin.Abstractions\bin\Release\netstandard2.1\Toasts.Forms.Plugin.Abstractions.pdb" target="lib\netstandard2.1" />
 
     <!--Xamarin.Android-->
     <file src="..\Toasts.Forms.Plugin.Droid\bin\Release\Toasts.Forms.Plugin.Droid.dll" target="lib\MonoAndroid10" />

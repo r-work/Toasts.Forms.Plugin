@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.Android;
 namespace Toasts.Forms.Plugin.Sample.DroidAppCompat
 {
     [Activity(Label = "Toasts.Forms.Plugin.Sample.DroidAppCompat", Theme = "@style/MyTheme", MainLauncher = true, Icon = "@drawable/Icon", LaunchMode = Android.Content.PM.LaunchMode.SingleTop)]
-    public class MainActivity : FormsAppCompatActivity
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
