@@ -7,6 +7,7 @@ namespace Plugin.Toasts
     using System;
 	using System.Collections.Concurrent;
 	using System.Collections.Generic;
+    using System.Linq;
     using System.Threading;
 
     internal class SnackbarNotification
@@ -31,8 +32,12 @@ namespace Plugin.Toasts
 
             builder.Append(options.Description);
 
+            while (_resetEvents.Any(x => x.Key == _count.ToString()))
+            {
+                _count++;
+            }
+
             var id = _count.ToString();
-            _count++;
 
             var snackbar = Snackbar.Make(view, builder, Snackbar.LengthLong);
             if (options.IsClickable)
